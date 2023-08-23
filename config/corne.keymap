@@ -183,8 +183,8 @@
         //│          │          │          │  UP      │          │          │   │          │     7    │  8       │   9      │   DELETE │   DELETE │
             &none      &none      &none      &kp UP     &none      &none         &none      &kp N7     &kp N8     &kp N9     &kp DELETE &kp DELETE
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  LCTRL   │  LCTRL   │  LEFT    │  DOWN    │  RIGHT   │          │   │          │    4     │    5     │  6       │   TAB    │   TAB    │
-            &kp LCTRL  &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT    &none          &none     &kp N4     &kp N5     &kp N6     &kp TAB    &kp TAB
+        //│  LCTRL   │  LSHFT   │  LEFT    │  DOWN    │  RIGHT   │          │   │          │    4     │    5     │  6       │   TAB    │   TAB    │
+            &kp LCTRL  &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT    &none          &none     &kp N4     &kp N5     &kp N6     &kp TAB    &kp TAB
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ RALT     │ LSHFT    │          │    C     │          │          │   │  0       │  1       │    2     │   3      │   ENTER  │   ENTER  │
             &kp RALT   &kp LSHFT  &none      &trans     &none      &none          &kp N0     &kp N1     &kp N2     &kp N3    &kp ENTER   &kp ENTER
