@@ -169,8 +169,8 @@
         //│  CTRL    │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "          │    '
             &kp LCTRL  &ht LCTRL A  &kp S     &kp D    &ht LGUI F   &kp G          &kp H     &ht LGUI J  &kp K     &kp L      &kp SEMICOLON  &kp SQT
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────────┼──────────┤
-        //│  SHFT    │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?          │   ESC
-            &kp LSHFT  &ht LSHFT Z   &kp X   &td_cp    &td_paste   &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &ht LALT FSLH   &kp ESC
+        //│  RALT    │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?          │   ESC
+            &kp RALT  &ht LSHFT Z   &kp X   &td_cp    &td_paste   &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &ht LALT FSLH   &kp ESC
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────────┴──────────╯
                                             &kp BSPC  &lt 1 ENTER &ht LGUI SPACE &ht LSHFT BSPC &mo 2   &kp RALT
         //                                  ╰──────────┴──────────┴──────────╯  ╰──────────┴──────────┴──────────╯
