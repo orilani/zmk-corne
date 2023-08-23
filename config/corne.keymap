@@ -151,10 +151,10 @@
     combos {
             compatible = "zmk,combos";
                     
-            COMBO(esckey, &kp ESC, 0 1)
-            COMBO(langkey, &macro_lang, 10 11)
-            COMBO(commakey, &kp SINGLE_QUOTE, 28 29)
-            COMBO(tabkey, &kp TAB, 20 21)
+            COMBO(esckey, &kp ESC, 1 2)
+            COMBO(langkey, &macro_lang, 13 14)
+            COMBO(commakey, &kp SINGLE_QUOTE, 33 34)
+            COMBO(tabkey, &kp TAB, 25 26)
     };
 
     keymap {
