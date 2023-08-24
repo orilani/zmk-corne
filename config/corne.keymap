@@ -186,8 +186,8 @@
         //│          │  LCTRL   │  LEFT    │  DOWN    │  RIGHT   │          │   │          │    4     │    5     │  6       │   TAB    │   TAB    │
             &none      &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT    &none          &none     &kp N4     &kp N5     &kp N6     &kp TAB    &kp TAB
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │ RALT     │          │    C     │          │          │   │  0       │  1       │    2     │   3      │   ENTER  │   ENTER  │
-            &none      &kp RALT   &none      &trans     &none      &none          &kp N0     &kp N1     &kp N2     &kp N3    &kp ENTER   &kp ENTER
+        //│ LSHFT    │ RALT     │          │    C     │          │          │   │  0       │  1       │    2     │   3      │   ENTER  │   ENTER  │
+            &kp LSHFT  &kp RALT   &none      &trans     &none      &none          &kp N0     &kp N1     &kp N2     &kp N3    &kp ENTER   &kp ENTER
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                                 &none     &none      &none         &kp RALT   &mo 3      &none
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
