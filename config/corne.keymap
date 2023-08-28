@@ -172,8 +172,8 @@
         //│  BSPC    │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?          │   ESC
             &kp BSPC  &ht LSHFT Z   &kp X   &td_cp    &td_paste   &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &ht LALT FSLH   &kp ESC
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────────┴──────────╯
-                                            &kp LALT  &lt 1 ENTER &ht LGUI SPACE &ht LSHFT BSPC &mo 2   &kp RALT
-        //                                  ╰──────────┴──────────┴──────────╯  ╰──────────┴──────────┴──────────╯
+                                        &ht LALT BSPC  &lt 1 ENTER &ht LGUI SPACE &ht LSHFT BSPC &mo 2  &kp RALT
+        //                             ╰──────────────┴──────────┴──────────╯  ╰──────────┴──────────┴──────────╯
             >;
         };
 
