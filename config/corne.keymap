@@ -211,7 +211,6 @@
                 , <&macro_release &kp O>
                 , <&macro_press &kp M>
                 , <&macro_release &kp M>
-
                 ;
         };  
     };
