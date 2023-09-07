@@ -177,8 +177,8 @@
                 = <&macro_press &kp O>
                 , <&macro_press &kp R>
                 , <&macro_press &kp I>
-                , <&macro_press &kp A>
                 , <&macro_press &kp L>
+                , <&macro_release &kp L>
                 , <&macro_press &kp A>
                 , <&macro_press &kp N>
                 , <&macro_press &kp I>
@@ -191,6 +191,7 @@
                 , <&macro_press &kp A>
                 , <&macro_press &kp I>
                 , <&macro_press &kp L>
+                , <&macro_release &kp L>
                 , <&macro_press &kp DOT>
                 , <&macro_press &kp C>
                 , <&macro_press &kp O>
