@@ -175,27 +175,43 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp O>
+                , <&macro_release &kp O>
                 , <&macro_press &kp R>
+                , <&macro_release &kp R>
                 , <&macro_press &kp I>
+                , <&macro_release &kp I>
                 , <&macro_press &kp L>
                 , <&macro_release &kp L>
                 , <&macro_press &kp A>
+                , <&macro_release &kp A>
                 , <&macro_press &kp N>
+                , <&macro_release &kp N>
                 , <&macro_press &kp I>
+                , <&macro_release &kp I>
                 , <&macro_press &kp N0>
                 , <&macro_press &kp N5>
                 , <&macro_press &kp N5>
                 , <&macro_press &kp AT>
+                , <&macro_release &kp AT>
                 , <&macro_press &kp G>
+                , <&macro_release &kp G>
                 , <&macro_press &kp M>
+                , <&macro_release &kp M>
                 , <&macro_press &kp A>
+                , <&macro_release &kp A>
                 , <&macro_press &kp I>
+                , <&macro_release &kp I>
                 , <&macro_press &kp L>
                 , <&macro_release &kp L>
                 , <&macro_press &kp DOT>
+                , <&macro_release &kp DOT>
                 , <&macro_press &kp C>
+                , <&macro_release &kp C>
                 , <&macro_press &kp O>
+                , <&macro_release &kp O>
                 , <&macro_press &kp M>
+                , <&macro_release &kp M>
+
                 ;
         };  
     };
