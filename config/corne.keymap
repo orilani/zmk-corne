@@ -190,7 +190,9 @@
                 , <&macro_release &kp I>
                 , <&macro_press &kp N0>
                 , <&macro_press &kp N5>
+                , <&macro_release &kp N5>
                 , <&macro_press &kp N5>
+                , <&macro_release &kp N5>
                 , <&macro_press &kp AT>
                 , <&macro_release &kp AT>
                 , <&macro_press &kp G>
