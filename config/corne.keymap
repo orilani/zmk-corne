@@ -167,6 +167,36 @@
                 , <&macro_release &kp LGUI>
                 , <&macro_release &kp LGUI>
                 ;
+        };
+        
+        macro_email: macro_email {
+            label = "ZM_macro_email";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp O>
+                , <&macro_press &kp R>
+                , <&macro_press &kp I>
+                , <&macro_press &kp A>
+                , <&macro_press &kp L>
+                , <&macro_press &kp A>
+                , <&macro_press &kp N>
+                , <&macro_press &kp I>
+                , <&macro_press &kp N0>
+                , <&macro_press &kp N5>
+                , <&macro_press &kp N5>
+                , <&macro_press &kp AT>
+                , <&macro_press &kp G>
+                , <&macro_press &kp M>
+                , <&macro_press &kp A>
+                , <&macro_press &kp I>
+                , <&macro_press &kp L>
+                , <&macro_press &kp DOT>
+                , <&macro_press &kp C>
+                , <&macro_press &kp O>
+                , <&macro_press &kp M>
+                ;
         };  
     };
 
@@ -208,8 +238,8 @@
         //│          │  LCTRL   │  LEFT    │  DOWN    │  RIGHT   │          │   │          │    4     │    5     │  6       │   TAB    │   TAB    │
             &none      &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT    &none          &none     &kp N4     &kp N5     &kp N6     &kp TAB    &kp TAB
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LSHFT    │ RALT     │          │          │          │          │   │  0       │  1       │    2     │   3      │   ENTER  │   ENTER  │
-            &kp LSHFT  &kp RALT   &none    &macro_collapse &none   &none          &kp N0     &kp N1     &kp N2     &kp N3    &kp ENTER   &kp ENTER
+        //│ LSHFT    │ RALT     │          │          │          │          │   │  0       │  1       │    2     │   3      │   EMAIL  │   ENTER  │
+            &kp LSHFT  &kp RALT   &none    &macro_collapse &none   &none          &kp N0     &kp N1     &kp N2     &kp N3    &macro_email &kp ENTER
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                                 &none     &none      &none         &kp RALT   &mo 3      &none
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
