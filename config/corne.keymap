@@ -75,6 +75,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp P>, <&kp P>,<&macro_prtsc>;
         };
+
+        td_collapse_y: tap_dance_collapse {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_collapse";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Y>, <&kp Y>,<&macro_collapse>;
+        };
     };
 
     macros {
@@ -146,6 +154,19 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };  
+
+        macro_collapse: macro_collapse {
+            label = "ZM_macro_collapse";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp K>
+                , <&macro_press &kp LGUI>
+                , <&macro_press &kp N0>
+                , <&macro_release &kp LGUI>
+                ;
+        };  
     };
 
     combos {
@@ -164,10 +185,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────────┬──────────╮
         //│  DELETE  │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P           │   DELETE
-            &kp DELETE &td_lgui_q  &td_lgui_w &kp E     &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O     &td_prtscr     &kp DELETE
+            &kp DELETE &td_lgui_q  &td_lgui_w &kp E     &kp R      &kp T          &td_collapse_y &kp U  &kp I      &kp O      &td_prtscr    &kp DELETE
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────────┼──────────┤
         //│  CTRL    │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "          │    '
-            &kp LCTRL  &ht LCTRL A  &kp S     &kp D    &ht LGUI F   &kp G          &kp H     &ht LGUI J  &kp K     &kp L      &kp SEMICOLON  &kp SQT
+            &kp LCTRL  &ht LCTRL A  &kp S     &kp D    &ht LGUI F   &kp G          &kp H     &ht LGUI J  &kp K     &kp L      &kp SEMICOLON  &kp DOUBLE_QUOTES
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────────┼──────────┤
         //│  BSPC    │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?          │   ESC
             &kp BSPC  &ht LSHFT Z   &kp X   &td_cp    &td_paste   &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &ht LALT FSLH   &kp ESC
@@ -186,8 +207,8 @@
         //│          │  LCTRL   │  LEFT    │  DOWN    │  RIGHT   │          │   │          │    4     │    5     │  6       │   TAB    │   TAB    │
             &none      &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT    &none          &none     &kp N4     &kp N5     &kp N6     &kp TAB    &kp TAB
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LSHFT    │ RALT     │          │    C     │          │          │   │  0       │  1       │    2     │   3      │   ENTER  │   ENTER  │
-            &kp LSHFT  &kp RALT   &none      &trans     &none      &none          &kp N0     &kp N1     &kp N2     &kp N3    &kp ENTER   &kp ENTER
+        //│ LSHFT    │ RALT     │          │          │          │          │   │  0       │  1       │    2     │   3      │   ENTER  │   ENTER  │
+            &kp LSHFT  &kp RALT   &none       &none     &none      &none          &kp N0     &kp N1     &kp N2     &kp N3    &kp ENTER   &kp ENTER
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                                 &none     &none      &none         &kp RALT   &mo 3      &none
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
