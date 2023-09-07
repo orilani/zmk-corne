@@ -165,6 +165,7 @@
                 , <&macro_press &kp LGUI>
                 , <&macro_press &kp N0>
                 , <&macro_release &kp LGUI>
+                , <&macro_release &kp LGUI>
                 ;
         };  
     };
@@ -185,7 +186,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────────┬──────────╮
         //│  DELETE  │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P           │   DELETE
-            &kp DELETE &td_lgui_q  &td_lgui_w &kp E     &kp R      &kp T          &td_collapse_y &kp U  &kp I      &kp O      &td_prtscr    &kp DELETE
+            &kp DELETE &td_lgui_q  &td_lgui_w &kp E     &kp R      &kp T          &kp Y      &kp U       &kp I      &kp O      &td_prtscr    &kp DELETE
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────────┼──────────┤
         //│  CTRL    │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "          │    '
             &kp LCTRL  &ht LCTRL A  &kp S     &kp D    &ht LGUI F   &kp G          &kp H     &ht LGUI J  &kp K     &kp L      &kp SEMICOLON  &kp DOUBLE_QUOTES
@@ -208,7 +209,7 @@
             &none      &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT    &none          &none     &kp N4     &kp N5     &kp N6     &kp TAB    &kp TAB
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LSHFT    │ RALT     │          │          │          │          │   │  0       │  1       │    2     │   3      │   ENTER  │   ENTER  │
-            &kp LSHFT  &kp RALT   &none       &none     &none      &none          &kp N0     &kp N1     &kp N2     &kp N3    &kp ENTER   &kp ENTER
+            &kp LSHFT  &kp RALT   &none    &macro_collapse &none   &none          &kp N0     &kp N1     &kp N2     &kp N3    &kp ENTER   &kp ENTER
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                                 &none     &none      &none         &kp RALT   &mo 3      &none
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
