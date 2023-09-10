@@ -155,8 +155,8 @@
                 ;
         };  
 
-        macro_collapse: macro_collapse {
-            label = "ZM_macro_collapse";
+        collapse: collapse {
+            label = "ZM_collapse";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -171,6 +171,22 @@
                 ;
         };
         
+        uncollapse: uncollapse {
+            label = "ZM_uncollapse";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp K>
+                , <&macro_release &kp K>
+                , <&macro_press &kp LGUI>
+                , <&macro_press &kp J>
+                , <&macro_release &kp J>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+
         macro_email: macro_email {
             label = "ZM_macro_email";
             compatible = "zmk,behavior-macro";
@@ -285,7 +301,7 @@
             &none      &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT    &none          &none     &kp N4     &kp N5     &kp N6      &none     &macro_id
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LSHFT    │ RALT     │          │          │          │          │   │  0       │  1       │    2     │   3      │          │   EMAIL  │
-            &kp LSHFT  &kp RALT   &none    &macro_collapse &none   &none          &kp N0     &kp N1     &kp N2     &kp N3      &none    &macro_email
+            &kp LSHFT  &kp RALT   &none      &collapse &uncollapse  &none          &kp N0     &kp N1     &kp N2     &kp N3     &none   &macro_email
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                                 &none     &none      &none         &kp RALT   &mo 3      &none
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
