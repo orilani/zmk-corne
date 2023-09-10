@@ -162,8 +162,10 @@
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_press &kp K>
+                , <&macro_release &kp K>
                 , <&macro_press &kp LGUI>
                 , <&macro_press &kp N0>
+                , <&macro_release &kp N0>
                 , <&macro_release &kp LGUI>
                 , <&macro_release &kp LGUI>
                 ;
