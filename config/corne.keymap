@@ -76,13 +76,6 @@
             bindings = <&kp P>, <&kp P>,<&macro_prtsc>;
         };
 
-        td_collapse_y: tap_dance_collapse {
-            compatible = "zmk,behavior-tap-dance";
-            label = "tap_dance_collapse";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp Y>, <&kp Y>,<&macro_collapse>;
-        };
     };
 
     macros {
@@ -328,11 +321,11 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬─────────────┬─────────────╮
-        //│ RESET    │          │          │          │          │          │              │          │          │          │  RESET      │             │
-            &sys_reset  &none      &none      &none    &kp K_MUTE  &kp K_PP        &none      &none      &none      &none     &sys_reset      &none
+        //│          │ RESET    │          │          │          │          │              │          │          │          │  RESET      │             │
+            &none     &sys_reset   &none      &none    &kp K_MUTE  &kp K_PP        &none      &none      &none      &none     &sys_reset      &none
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼─────────────┼─────────────┤
-        //│BOOTLOADER│          │          │          │          │          │              │          │          │          │BOOTLOADER   │     
-            &bootloader &none       &none      &none  &kp K_VOL_DN &kp K_VOL_UP     &none      &none      &none      &none     &bootloader    &none
+        //│          │BOOTLOADER│          │          │          │          │              │          │          │          │BOOTLOADER   │     
+            &none     &bootloader  &none     &none  &kp K_VOL_DN &kp K_VOL_UP     &none      &none      &none      &none     &bootloader    &none
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼─────────────┼─────────────┤
         //│          │          │          │          │          │          │              │          │          │          │    
              &none      &none      &none      &none    &kp K_PREV &kp K_NEXT       &none      &none      &none      &none       &none         &none
