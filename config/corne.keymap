@@ -252,7 +252,35 @@
                 , <&macro_press &kp N6>
                 , <&macro_release &kp N6>
                 ;
-        };  
+        };
+
+        macro_phone: macro_phone {
+            label = "ZM_macro_phone";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp N0>
+                , <&macro_release &kp N0>
+                , <&macro_press &kp N5>
+                , <&macro_release &kp N5>
+                , <&macro_press &kp N4>
+                , <&macro_release &kp N4>
+                , <&macro_press &kp N8>
+                , <&macro_release &kp N8>
+                , <&macro_press &kp N0>
+                , <&macro_release &kp N0>
+                , <&macro_press &kp N5>
+                , <&macro_release &kp N5>
+                , <&macro_press &kp N3>
+                , <&macro_release &kp N3>
+                , <&macro_press &kp N0>
+                , <&macro_release &kp N0>
+                , <&macro_press &kp N2>
+                , <&macro_release &kp N2>
+                , <&macro_press &kp N2>
+                , <&macro_release &kp N2>
+                ;
+        };
     };
 
     combos {
@@ -288,14 +316,14 @@
         one_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │  UP      │          │          │   │          │     7    │  8       │   9      │  DELETE  │          │
-            &none      &none      &none      &kp UP     &none      &none           &none      &kp N7    &kp N8     &kp N9    &kp DELETE    &none
+        //│          │          │          │  UP      │          │          │   │          │     7    │  8       │   9      │  PHONE   │          │
+            &none      &none      &none      &kp UP     &none      &none           &none      &kp N7    &kp N8     &kp N9    &macro_phone   &none
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  LCTRL   │  LEFT    │  DOWN    │  RIGHT   │          │   │          │    4     │    5     │  6       │   ID     │          │
-            &none      &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT    &none          &none     &kp N4     &kp N5     &kp N6      &macro_id  &none
+            &none      &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT    &none          &none     &kp N4     &kp N5     &kp N6     &macro_id   &none
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LSHFT    │ RALT     │          │          │          │          │   │  0       │  1       │    2     │   3      │  EMAIL   │          │
-            &kp LSHFT  &kp RALT   &none      &collapse &uncollapse  &none          &kp N0     &kp N1     &kp N2     &kp N3   &macro_email &none
+            &kp LSHFT  &kp RALT   &none      &collapse &uncollapse  &none          &kp N0     &kp N1     &kp N2     &kp N3   &macro_email  &none
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                             &kp DELETE    &none      &none         &kp RALT   &mo 3      &none
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
