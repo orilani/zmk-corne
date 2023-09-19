@@ -211,6 +211,20 @@
                 ;
         };
 
+        delete: delete {
+            label = "ZM_delete";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp LALT>
+                , <&macro_press &kp BSPC>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp BSPC>
+                ;
+        };
+
         macro_email: macro_email {
             label = "ZM_macro_email";
             compatible = "zmk,behavior-macro";
@@ -348,7 +362,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │  UP      │          │          │   │          │     7    │  8       │   9      │  PHONE   │          │
-            &none      &none      &none      &kp UP     &none      &none           &none      &kp N7    &kp N8     &kp N9    &macro_phone   &none
+            &delete     &none      &none      &kp UP     &none      &none           &none      &kp N7    &kp N8     &kp N9    &macro_phone  &none
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  LCTRL   │  LEFT    │  DOWN    │  RIGHT   │          │   │          │    4     │    5     │  6       │   ID     │          │
             &none      &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT  &uncommant       &none     &kp N4     &kp N5     &kp N6     &macro_id   &none
